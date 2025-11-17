@@ -75,16 +75,17 @@ body {
 
 hr {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  height: 2px;
+  border-top: 5px solid rgba(16, 16, 16, 0.15);
+  border-radius: 4px;
   margin: 20px 0;
-  opacity: 0.4;
 }
 
 /* Layout : formulaire à gauche, liste à droite (desktop) */
 .grid {
   display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 24px;
+  grid-template-columns: 500px 1fr;
+  gap: 40px;
   align-items: start;
 }
 
