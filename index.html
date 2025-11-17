@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quotations-App</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gestionnaire de citations</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Mes citations</h1>
-    <h2>Gestionnaire de citations en ligne</h2>
-    <h3>0 citations</h3>
-    <hr />
-    <form id="quoteForm">
-      <div>
-        <label for="quoteInput">Citation :</label>
-        <input type="text" id="quoteInput" name="quote" />
+    <div class="app">
+      <div class="header">
+        <h1>Mes citations</h1>
+        <h3>Nombre de citations : <span id="count">1</span></h3>
       </div>
 
-      <div>
-        <label for="authorInput">Auteur / Autrice :</label>
-        <input type="text" id="authorInput" name="author" />
-      </div>
+      <div class="grid">
+        <div class="card">
+          <form id="quoteForm">
+            <div>
+              <label for="quoteInput">Citation :</label>
+              <input
+                type="text"
+                id="quoteInput"
+                name="quote"
+                placeholder="Ex : On ne naît pas femme, on le devient."
+              />
+            </div>
+            <div>
+              <label for="authorInput">Auteur / Autrice :</label>
+              <input
+                type="text"
+                id="authorInput"
+                name="author"
+                placeholder="Simone de Beauvoir"
+              />
+            </div>
+            <button type="submit">Ajouter la citation</button>
+          </form>
+        </div>
 
-      <button type="submit">Ajouter la citation</button>
-    </form>
-    <div id="quote-list">
-      <div class="quote">
-        <p class="text">"On ne naît pas femme, on le devient."</p>
-        <p class="author">Simone de Beauvoir</p>
+        <div class="quote-list-wrap">
+          <div id="quote-list">
+            <div class="quote">
+              <p class="text">"On ne naît pas femme, on le devient."</p>
+              <p class="author">Simone de Beauvoir</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
