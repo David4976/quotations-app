@@ -27,7 +27,7 @@ body {
 }
 body {
   font-family: var(--font-sans);
-  background: linear-gradient(180deg, var(--bg), #0b75ee 200px);
+  background: linear-gradient(180deg, var(--bg), #46668c 200px);
   color: #111827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,7 +76,7 @@ body {
 hr {
   border: none;
   height: 2px;
-  border-top: 5px solid rgba(16, 16, 16, 0.15);
+  border-top: 5px solid rgba(92, 9, 236, 0.15);
   border-radius: 4px;
   margin: 20px 0;
 }
