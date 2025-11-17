@@ -1,5 +1,5 @@
 // Étape 6 : variable globale pour compter les citations
-let quoteCount = 0;
+let quoteCount = 1;
 
 // Étape 4 : gestionnaire d'événement sur le formulaire
 const form = document.getElementById("quoteForm");
