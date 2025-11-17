@@ -3,9 +3,9 @@
   padding: 0;
 }
 :root {
-  --bg: #f6f7fb;
+  --bg: #0b75ee;
   --card: #ffffff;
-  --muted: #6b7280;
+  --muted: #e2e6ef;
   --accent: #6c63ff;
   --accent-contrast: #ffffff;
   --shadow: 0 6px 18px rgba(31, 41, 55, 0.08);
@@ -27,7 +27,7 @@ body {
 }
 body {
   font-family: var(--font-sans);
-  background: linear-gradient(180deg, var(--bg), #eef0f8 200px);
+  background: linear-gradient(180deg, var(--bg), #0b75ee 200px);
   color: #111827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,13 +53,13 @@ body {
 }
 .header h1 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 3rem;
   letter-spacing: -0.02em;
 }
 .header h3 {
   margin: 0;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   color: var(--muted);
 }
 .header h3 span#count {
@@ -69,8 +69,15 @@ body {
   padding: 4px 10px;
   border-radius: 999px;
   margin-left: 8px;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   vertical-align: middle;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  opacity: 0.4;
 }
 
 /* Layout : formulaire à gauche, liste à droite (desktop) */
